@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	html {
+		box-sizing: border-box;
+	}
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		margin: 2rem auto;
+		line-height: 1.35;
+	}
+
+	.section {
+		max-width: 24rem;
+		margin: auto;
+	}
+
+	.content {
+		border: 3px solid tomato;
+		color: black;
+		font-family: sans-serif;
+		padding: 1rem;
+	}
+
+	p {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.item {
+		/* padding: 0.5rem;
+		margin-top: 0.5rem; */
+	}
+
+	.controllers {
+		margin-bottom: 1rem;
+	}
+
+	button {
+		font-size: 1rem;
+		padding: 1rem;
+		font-weight: bold;
+		background: tomato;
+		border: none;
+		display: block;
+		width: 100%;
+		cursor: pointer;
+		color: white;
+		margin: 0;
+		-webkit-appearance: none;
+	}
+
+	button:active,
+	button:focus {
+		outline: none;
+	}
+
+</style>
+
+<body>
+	<div class="controllers">
+		<button data-collapse="#target3" class="collapseToggle">Toggle #3</button>
+		<button class="expandAll">Expand All</button>
+		<button class="collapseAll">Collapse All</button>
+	</div>
+	<div class="section">
+		<button data-collapse="#target1" class="collapseToggle">Toggle #1</button>
+		<div id="target1" class="content collapseContent">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto suscipit, placeat quos voluptas sint
+				tenetur, iure esse atque neque nobis incidunt dolorum obcaecati adipisci cum sequi dolore optio nostrum dolorem!
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<button data-collapse="#target2" class="collapseToggle">Toggle #2</button>
+		<div id="target2" class="content collapseContent">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto suscipit, placeat quos voluptas sint
+				tenetur, iure esse atque neque nobis incidunt dolorum obcaecati adipisci cum sequi dolore optio nostrum dolorem!
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<button data-collapse="#target3" class="collapseToggle">Toggle #3</button>
+		<div id="target3" class="content collapseContent">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto suscipit, placeat quos voluptas sint
+				tenetur, iure esse atque neque nobis incidunt dolorum obcaecati adipisci cum sequi dolore optio nostrum dolorem!
+			</p>
+		</div>
+	</div>
+	<script src="./main.js"></script>
+</body>
+
+</html>
